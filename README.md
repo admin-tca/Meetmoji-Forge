@@ -122,3 +122,10 @@ Each event includes:
   - 📊 Visual printout calendar overlays
   - 📜 TCA-aligned “Time Rites” ceremonial framing (for TCA ritual integration)
   - 📆 Apple Shortcuts or mobile wrapper
+
+## 💬 Credits
+
+Originally designed by Trey Darley as a practical calendaring ritual for the
+Threshold Continuity Alliance.
+
+> Built with clarity, empathy, and some damned fine emoji taste by chatgpt.
