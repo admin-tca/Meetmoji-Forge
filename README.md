@@ -123,11 +123,95 @@ Each event includes:
   - 📜 TCA-aligned “Time Rites” ceremonial framing (for TCA ritual integration)
   - 📆 Apple Shortcuts or mobile wrapper
 
-Perfect choice, brother — a humble, respectful acknowledgment in the `README.md` strikes the right balance between **global cultural awareness** and **pragmatic engineering**.
+## 📡 The EBI24\_CLOCK Convention: A Ritual Lexicon for Coordinated Time
 
-Here’s a suggested subsection you can append to the README under something like:
+**Meetmoji Forge** is more than a meeting calendar generator — it is a human-centric calendrical ritual system designed for resilient collaboration across fractured geographies and time zones. One of its most quietly revolutionary components is the **EBI24\_CLOCK**, a deterministic, emoji-based time alphabet built to serve as a globally legible alternative to traditional numeric hour references.
+
+## 🤔 Why Replace Numeric Time?
+
+Coordinating time across time zones is cognitively expensive and error-prone. Most humans are not wired to convert between UTC, local daylight shifting, or regional quirks like India’s +5:30 offset. When collaborating across cultures and continents — especially over degraded or unreliable connections — even seemingly trivial scheduling tasks can introduce friction.
+
+To address this, we designed a **spoken-friendly, emoji-anchored system** that avoids numeric ambiguity and encodes **UTC hours into 24 distinct animal faces**, each chosen for:
+
+  - **Verbal distinctiveness**, even in noisy or low-fidelity voice environments.
+  - **Cross-cultural recognizability**, avoiding animals with negative or culturally complex associations.
+  - **Minimal syllabic overlap**, allowing for fast recognition and reduced ambiguity.
+
+The result is a human-parseable ritual time lexicon that sounds more like aviation call signs or poetic code than a dry timestamp.
+
+> "Let's meet at **Badger Face Thirty** next Wednesday."
+>
+> "I'm only free during **Bunny Face** or **Fox Face** hours this week."
+
+## 🧬 Format
+
+Each UTC hour is mapped to an emoji and a **Standard Description** (e.g., “Dog Face”, “Sloth Face”) that can be used in speech or text.
+
+| Hour (UTC) | Emoji | Description   |
+| ---------- | ----- | ------------- |
+| 00         | 🐶    | Dog Face      |
+| 01         | 🐱    | Cat Face      |
+| 02         | 🐭    | Mouse Face    |
+| 03         | 🦝    | Raccoon Face  |
+| 04         | 🐰    | Bunny Face    |
+| 05         | 🦊    | Fox Face      |
+| 06         | 🐻    | Bear Face     |
+| 07         | 🐴    | Horse Face    |
+| 08         | 🐐    | Goat Face     |
+| 09         | 🐯    | Tiger Face    |
+| 10         | 🦁    | Lion Face     |
+| 11         | 🦬    | Bison Face    |
+| 12         | 🐸    | Frog Face     |
+| 13         | 🦥    | Sloth Face    |
+| 14         | 🐔    | Chicken Face  |
+| 15         | 🦔    | Hedgehog Face |
+| 16         | 🦡    | Badger Face   |
+| 17         | 🦜    | Parrot Face   |
+| 18         | 🐺    | Wolf Face     |
+| 19         | 🦆    | Duck Face     |
+| 20         | 🦉    | Owl Face      |
+| 21         | 🦇    | Bat Face      |
+| 22         | 🐢    | Turtle Face   |
+| 23         | 🐵    | Monkey Face   |
+
+Each full emoji-time phrase is composed of:
+
+```
+<Animal Face> + <Minute Offset>
+```
+
+For example:
+
+  -  “🦡 Badger Face Thirty” → UTC 16:30
+  -  “🐺 Wolf Face Fifteen” → UTC 18:15
+  -  “🦝 Raccoon Face at the top” → UTC 03:00
+
+## 🗺️ Cultural + Technical Considerations
+
+  -  **No animals with strong regional taboos** (e.g. pigs in Islamic contexts, snakes in East Asia).
+  -  **Avoids emoji ambiguity** by choosing animal face emojis with high visual distinctiveness across platforms.
+  -  **Tested for verbal clarity** among non-native English speakers.
+  -  **Machine-readable** for deterministic lookup in calendaring systems and future EBI6 protocol extensions.
+
+## 🛠 Integration with Meetmoji Forge
+
+The EBI24\_CLOCK is used internally to:
+
+  - Tag calendar slots with **distinct, memorable visual cues**.
+  - Enable **voice-friendly scheduling shorthand** across global teams.
+  - Support **ritual linguistic framing** in ceremonial or distributed scheduling contexts.
+
+It is also extensible — allowing integrations with:
+
+  - Localizations (e.g., translating “Badger Face” to “Tête de blaireau”)
+  - Offline paper planners with emoji glyphs
+  - Braille + AAC-compatible symbol boards
 
 ---
+
+This convention is part of a broader philosophy we call **Semantic Resilience**: the design of systems that stay useful and expressive even when degraded, misunderstood, or disconnected from their origin.
+
+If the Internet fractures and time zones blur, **Badger Face Thirty** will still make sense.
 
 ## 🌍 On Prayer Times and Rhythmic Coexistence
 
