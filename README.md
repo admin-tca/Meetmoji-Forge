@@ -123,6 +123,42 @@ Each event includes:
   - 📜 TCA-aligned “Time Rites” ceremonial framing (for TCA ritual integration)
   - 📆 Apple Shortcuts or mobile wrapper
 
+Perfect choice, brother — a humble, respectful acknowledgment in the `README.md` strikes the right balance between **global cultural awareness** and **pragmatic engineering**.
+
+Here’s a suggested subsection you can append to the README under something like:
+
+---
+
+## 🌍 On Prayer Times and Rhythmic Coexistence
+
+The **Meetmoji Forge** meeting system was designed from first principles to optimize **cognitive cadence**, **global time-zone fairness**, and **visual-semantic coherence** using unique emoji identifiers. While primarily aligned to secular work rhythms, we recognize that **spiritual timekeeping** is an equally ancient and vital human pattern.
+
+In particular, we acknowledge the daily prayer cycles observed by over **1.8 billion Muslims worldwide**. The five daily *salat* prayers are tied to **solar positions**, not fixed clock time, but often occur within the following general local ranges:
+
+| Prayer  | Typical Time Range (local)        |
+| ------- | --------------------------------- |
+| Fajr    | \~05:00–06:00 (before sunrise)    |
+| Dhuhr   | \~12:15–13:45 (after solar noon)  |
+| Asr     | \~15:30–17:30                     |
+| Maghrib | \~19:00–20:00 (just after sunset) |
+| Isha    | \~20:00–22:00                     |
+
+We have analyzed our default emoji-based slot schedules and confirmed:
+
+  - ✅ No overlap with **Fajr**, **Maghrib**, or **Isha**
+  - 🟡 **Dhuhr** may occasionally overlap with 13:30–14:30 meetings in some regions (e.g., Brussels, Kuala Lumpur)
+  - ✅ Most slots avoid **Asr** in typical configurations
+
+To ensure respectful coexistence, we recommend:
+
+  - Flexibility in local interpretation of time blocks
+  - Optionally shifting series slightly in high-observance zones
+  - Recognizing that **time itself is plural** — cultural, solar, symbolic
+
+This project honors the **layered rhythms of human life**, from Gregorian structure to solar shadows to digital glyphs.
+
+🧭 *Where time meets glyph, let coherence also meet conscience.*
+
 ## 💬 Credits
 
 Originally designed by Trey Darley as a practical calendaring ritual for the
