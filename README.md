@@ -1,6 +1,7 @@
-# 🧿 Meetmoji Forge  
-**The Ritual Calendar Crafter — Where Time Meets Glyph**  
-*...and where your visual processing cortex takes over from your guilt-ridden monkey mind!*
+# 🧿 Meetmoji Forge
+
+**The Ritual Calendar Crafter — Where Time Meets Glyph**
+*...and where your visual cortex takes over from your guilt-ridden monkey mind!*
 
 ---
 
@@ -8,14 +9,15 @@
 
 **Meetmoji Forge** is a handcrafted calendaring ritual tool that generates `.ics` files for your academic year — complete with phase-based planning blocks and visually anchored, emoji-clock-coded meeting slots.
 
-This is not a generic scheduling app.  
-It is a **semantic time protocol**.  
-A **cognitive architecture**.  
+This is not a generic scheduling app.
+It is a **semantic time protocol**.
+A **cognitive architecture**.
 A tool to bring order, rhythm, and signal to your collaborative life.
 
-You don’t schedule meetings with guilt.  
-You schedule them by asking:  
-**“What animal face are you today?”** 🐻🦊🦡🦉
+You don’t schedule meetings with guilt.
+You schedule them by asking:
+
+> **“What animal face are you today?”** 🐻🦊🦡🦉
 
 ---
 
@@ -23,25 +25,25 @@ You schedule them by asking:
 
 Most calendars are built for compliance — not cognition.
 
-They assume your brain is a command-line buffer:  
+They assume your brain is a command-line buffer:
 linear, overclocked, contextless.
 
 But human minds aren’t machines. They are:
 
-- **Visual**
-- **Rhythmic**
-- **Symbolic**
-- **Context-sensitive**
+* **Visual**
+* **Rhythmic**
+* **Symbolic**
+* **Context-sensitive**
 
 **Meetmoji Forge** is designed from first principles to support high-coherence scheduling across global teams, without sacrificing clarity or dignity.
 
 It works by:
 
-- Aligning to the **natural flow of the academic year**
-- Building in **cognitive affordances** (24–25 min slots with decompression time)
-- Anchoring to **global cities** and fair-time blocks
-- Using **deterministic emoji-hour tags** (via EBI24_CLOCK) for symbolic shorthand
-- Outputting **modular, shareable `.ics` files** ready to drop into any modern calendar
+* Aligning to the **natural flow of the academic year**
+* Building in **cognitive affordances** (25-min focus slots + decompression time)
+* Anchoring to **global cities** and fair-time blocks
+* Using **deterministic emoji-hour tags** (via `EBI24_CLOCK`) for symbolic shorthand
+* Outputting **modular, shareable `.ics` files** — ready to drop into any modern calendar
 
 No apps. No cloud. Just clean, meaningful time encoded in human-readable glyphs.
 
@@ -49,195 +51,211 @@ No apps. No cloud. Just clean, meaningful time encoded in human-readable glyphs.
 
 ## 🗺️ System Overview
 
-- 📅 **Academic Calendar Basis**  
-  Anchored on the European academic year (default: September 15).  
-  Each year is broken into:
-  - Semester A
-  - Downtime A→B
-  - Semester B (Flame)
-  - Summer Rest
-  - Deep Work Phase
-  - Preflight Prep
+### 📅 Academic Calendar Basis
 
-- ⏰ **Time Slot Design**  
-  Each weekday includes **8 time slots**, recurring every **3 weeks**, with:
-  - 25 minutes focus time
-  - 5-minute decompression buffer
-  - Anchored at humane, cross-zone times (e.g., 13:30–13:55 JST)
+Anchored on the European academic year (default: **September 15**).
+Each year is divided into symbolic phases:
 
-- 🌐 **Time Zone Anchors**  
-  Time slots are generated for:
-  - 🗼 Tokyo
-  - 🕌 Delhi
-  - 🏛 Brussels
-  - 🏛 Washington DC
-  - 🏞 Seattle  
-  *(Optional: Oceania-specific Monday/Friday slots)*
+* Semester A (Seed)
+* Winter Break
+* Semester A (cont.)
+* Downtime A→B
+* Semester B (Flame)
+* Summer Rest
+* Deep Work Phase
+* Preflight Prep
+* Liminal Drift
 
-- 🧠 **Emoji Time Protocol — EBI24_CLOCK**  
-  Each slot is tagged with a **unique animal face emoji** representing its UTC hour.  
-  These emojis are carefully chosen to:
-  - Be phonetically distinct
-  - Avoid cultural offense
-  - Enable clear communication even over poor connections
+Each phase outputs its own `.ics`.
 
-- 🗃 **Output Structure**  
-  Each `.ics` file contains:
-  - One phase (e.g., `semester_a`)
-  - All meeting slots for that phase
-  - All-day events for planning blocks (e.g., "Summer Rest")
+### ⏰ Time Slot Design
 
----
+Each participating weekday includes **8 meeting slots**, recurring every **3 weeks**, with:
 
-## 🔁 What Changed: From Random Emojis to Ritual Time Glyphs
+* 25 minutes of focused conversation
+* 5-minute decompression buffer
+* Aligned to globally humane windows (e.g., 13:30–13:55 JST)
 
-Originally, each meeting slot was assigned a randomized emoji.  
-But over time, this caused friction:
+### 🌐 Time Zone Anchors
 
-- Duplicates across phases
-- No meaningful way to speak or recall a time
-- Confusion across languages and screen readers
+Slots are defined for:
 
-We replaced this with **EBI24_CLOCK**: a deterministic mapping of each **UTC hour → animal face emoji**, similar to a phonetic alphabet or ritual lexicon.
+* 🗼 Tokyo
+* 🕌 Delhi
+* 🏛 Brussels
+* 🏛 Washington DC
+* 🏞 Seattle
+  *(Optional: Oceania region)*
 
-> “Let’s meet at **Badger Face Thirty** next Thursday.”  
-> “I’m free only during **Fox Face** or **Wolf Face** slots today.”
+### 🧠 Emoji Time Protocol — `EBI24_CLOCK`
+
+Each slot is tagged with a **unique animal face emoji**, deterministically mapped by UTC hour.
+
+This provides:
+
+* Visual shorthand
+* Cross-lingual clarity
+* Low-bandwidth legibility
+* Symbolic rhythm
 
 ---
 
-## 🧬 The EBI24_CLOCK
+## 🔁 From Random Emoji Chaos to Ritual Time Glyphs
 
-| Hour (UTC) | Emoji | Description   |
-|------------|-------|----------------|
-| 00         | 🐶    | Dog Face       |
-| 01         | 🐱    | Cat Face       |
-| 02         | 🐭    | Mouse Face     |
-| 03         | 🦝    | Raccoon Face   |
-| 04         | 🐰    | Bunny Face     |
-| 05         | 🦊    | Fox Face       |
-| 06         | 🐻    | Bear Face      |
-| 07         | 🐴    | Horse Face     |
-| 08         | 🐐    | Goat Face      |
-| 09         | 🐯    | Tiger Face     |
-| 10         | 🦁    | Lion Face      |
-| 11         | 🦬    | Bison Face     |
-| 12         | 🐸    | Frog Face      |
-| 13         | 🦥    | Sloth Face     |
-| 14         | 🐔    | Chicken Face   |
-| 15         | 🦔    | Hedgehog Face  |
-| 16         | 🦡    | Badger Face    |
-| 17         | 🦜    | Parrot Face    |
-| 18         | 🐺    | Wolf Face      |
-| 19         | 🦆    | Duck Face      |
-| 20         | 🦉    | Owl Face       |
-| 21         | 🦇    | Bat Face       |
-| 22         | 🐢    | Turtle Face    |
-| 23         | 🐵    | Monkey Face    |
+Originally, each slot used a randomized emoji — but this caused:
 
-Each meeting slot uses:
+* Confusion across meetings
+* Duplicate emojis per cycle
+* No reliable naming convention
+
+Now, the **EBI24\_CLOCK** defines a canonical mapping:
+**One emoji face per UTC hour** — globally consistent, culturally neutral.
+
+> “Let’s meet at **Badger Face Thirty** next Thursday.”
+> “I’m only free during **Fox Face** or **Wolf Face** today.”
+
+---
+
+## 🧬 EBI24\_CLOCK Reference
+
+| UTC Hour | Emoji | Label         |
+| -------- | ----- | ------------- |
+| 00       | 🐶    | Dog Face      |
+| 01       | 🐱    | Cat Face      |
+| 02       | 🐭    | Mouse Face    |
+| 03       | 🦝    | Raccoon Face  |
+| 04       | 🐰    | Bunny Face    |
+| 05       | 🦊    | Fox Face      |
+| 06       | 🐻    | Bear Face     |
+| 07       | 🐴    | Horse Face    |
+| 08       | 🐐    | Goat Face     |
+| 09       | 🐯    | Tiger Face    |
+| 10       | 🦁    | Lion Face     |
+| 11       | 🦬    | Bison Face    |
+| 12       | 🐸    | Frog Face     |
+| 13       | 🦥    | Sloth Face    |
+| 14       | 🐔    | Chicken Face  |
+| 15       | 🦔    | Hedgehog Face |
+| 16       | 🦡    | Badger Face   |
+| 17       | 🦜    | Parrot Face   |
+| 18       | 🐺    | Wolf Face     |
+| 19       | 🦆    | Duck Face     |
+| 20       | 🦉    | Owl Face      |
+| 21       | 🦇    | Bat Face      |
+| 22       | 🐢    | Turtle Face   |
+| 23       | 🐵    | Monkey Face   |
 
 ```text
-<Emoji> <Animal Face Name> + <Minute Offset>
-e.g., 🦡 Badger Face Thirty → UTC 16:30
+🦡 Badger Face Thirty → UTC 16:30
 ```
 
 ---
 
 ## 📦 Output
 
-The tool generates:
+You’ll receive:
 
-- output/semester_phases.ics → all-day blocks per calendar phase
-- output/meeting_<phase>.ics → detailed 25-minute meeting slots for that phase
+* `output/semester_phases_<year>.ics` — full-year block markers
+* `output/meeting_<phase>_<dates>.ics` — detailed 25-min meeting slots
 
-Each event contains:
+Each `VEVENT` includes:
 
-```text
-SUMMARY: Tokyo 🦊 Fox Face Slot (13:30–13:55 JST)
-DESCRIPTION: Autogenerated keywords (e.g., 🤖🔐☕️💬 — Semester A (Seed))
-CLASS: Always PRIVATE
+```ics
+SUMMARY: Tokyo 🦊 Fox Face Slot #1 (13:30–13:55 JST)
+DESCRIPTION: 🌱 — Semester A (Seed)
+CLASS: PRIVATE
 ```
+
+---
 
 ## 🛠 Configuration
 
-Located at the top of meetmoji_forge.py under # 🔧 USER CONFIGURATION.
+In `main.py` or CLI args:
 
-You can control:
+* `--year=YYYY` → Academic year start
+* `--dry-run` → Simulate without writing files
+* Configurable region, slot cadence, Oceania inclusion
+* Deterministic UID generation for ICS re-import stability
 
-- Start date of the academic year
-- Enable/disable Oceania slots
-- Series rotation intervals
-- Time zone block selection
-- Dry-run vs actual .ics generation
+All in standard Python 3 — no external dependencies required.
 
-No external libraries are required — just Python 3.
+---
 
 ## 🧪 Usage
 
-```python
+```bash
 git clone https://github.com/admin-tca/meetmoji-forge.git
 cd meetmoji-forge
-python3 meetmoji_forge.py --year=2039
+python3 main.py --year=2039
 ```
 
-Use --dry-run to simulate or inspect the output without writing .ics files.
+To inspect or simulate without writing `.ics` files:
 
-## 🙏 On Prayer Times and Rhythmic Coexistence
+```bash
+python3 main.py --year=2039 --dry-run
+```
 
-Meetmoji Forge is a secular tool — but it honors the rhythms of spiritual time.
+---
 
-Over 1.8 billion Muslims pray at five specific solar times daily. We have cross-checked our scheduling blocks to avoid overlapping:
+## 🙏 On Rhythmic Coexistence
 
-| Prayer  | Common Time Range (local) | Conflict                                  |
-| ------- | ------------------------- | ----------------------------------------- |
-| Fajr    | \~05:00–06:00             | ❌ None                                    |
-| Dhuhr   | \~12:30–13:45             | ⚠️ Possible partial overlap (13:30 slots) |
-| Asr     | \~15:30–17:30             | ✅ Avoided                                 |
-| Maghrib | \~19:00–20:00             | ❌ None                                    |
-| Isha    | \~20:00–22:00             | ❌ None                                    |
+**Meetmoji Forge is secular — but rhythm-aware.**
 
-We recommend:
+We’ve cross-checked time blocks against Islamic prayer times, for empathy in scheduling:
 
-- Adjusting slot usage in high-observance contexts
-- Recognizing solar, cultural, and ritual time as equally valid
-- Treating scheduling with empathy and elasticity
+| Prayer  | Local Time Range | Conflict Risk         |
+| ------- | ---------------- | --------------------- |
+| Fajr    | \~05:00–06:00    | ❌ None                |
+| Dhuhr   | \~12:30–13:45    | ⚠️ Potential conflict |
+| Asr     | \~15:30–17:30    | ✅ Avoided             |
+| Maghrib | \~19:00–20:00    | ❌ None                |
+| Isha    | \~20:00–22:00    | ❌ None                |
 
-🧭 Where time meets glyph, let conscience meet cadence.
+> Wherever you are: treat others' solar, cultural, and spiritual rhythms with **grace**.
+
+---
 
 ## 💬 Suggested Usage Flow
 
-1. Import .ics files into your calendar.
-2. To book a meeting:
-- Ask: “What weekday + region are you in?”
-- Look for that region’s available slots.
-- Pick a slot, rename the emoji to the person’s name.
-3. Send it with:
-> “You’re my 🐸 Frog Face meeting this cycle — see you then!”
+1. Import the relevant `.ics` files to your calendar.
+2. Ask collaborators:
+
+   > “What weekday + city block works for you?”
+3. Pick a shared animal face slot:
+
+   > “How about **Otter Face Twenty-Five** next Wednesday?”
+4. Book the event, rename it with the person’s name.
+
+---
 
 ## 🧭 Design Philosophy: Semantic Resilience
 
-This project is rooted in the Threshold Continuity Alliance's broader doctrine:
+**Meetmoji Forge** is a component of the [Threshold Continuity Alliance (TCA)](https://longnow.eu).
 
-When systems degrade, symbolic coherence matters most.
-Meetmoji Forge aims to remain legible:
+It is designed to:
 
-- Across time zones
-- Across languages
-- Across connection types
-- Across collapse
+* Withstand technological drift
+* Remain interpretable across collapse
+* Encode **meaning** in minimal forms
 
-If nothing else survives but paper calendars and emoji glyphs,
-Badger Face Thirty will still make sense.
+> If nothing survives but emoji glyphs and printed calendars,
+> **Badger Face Thirty** will still make sense.
+
+---
 
 ## 🙌 Credits
 
-- Concept & Ritual Architecture: Trey Darley
-- Engineering & Semantic Coherence Support: ChatGPT, Claude
-- Damned Fine Emoji Taste: ChatGPT
-- Affiliation: Threshold Continuity Alliance (TCA)
+* 🧠 Ritual Design & Calendar Theory: **Trey Darley**
+* 🔧 Semantic Architecture & Engineering Support: **ChatGPT**, Claude
+* 🦊 Glyph Taste Consulting: **ChatGPT**
+* 🏛 Affiliation: **Threshold Continuity Alliance (TCA)**
 
-Calendars should be kind.
-Time should be meaningful.
-Coherence is not optional.
+---
 
-Fox Face Out 🔥
+> Calendars should be kind.
+> Time should be meaningful.
+> **Coherence is not optional.**
+
+**Fox Face Out.** 🔥
+
+---
